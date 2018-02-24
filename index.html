@@ -3,9 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>UI Challenge 2 - Custom Form Elements</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <h1>UI Challenge - Custom Form Elements</h1>
+
+  <form>
+    <p>text input</p>
+    <input type="text">placeholder text
+    
+    <p>text input w/ validation error</p>
+    <input type="text" required>placeholder text
+    
+    <p>select box</p>
+    <select name="select-closed" id="">select box
+      <option  selected>please select an option...</option>
+      <option value="1">option 1</option>
+      <option value="2">option 2</option>
+    </select>
+
+    <p>select box - open</p>
+    <select name="select-open" id="" size="6">
+      select box
+      <option selected></option>
+      <option value="1">option 1</option>
+      <option value="2">option 2</option>
+      <option value="3">option 3</option>
+      <option value="4">option 4</option>
+      <option value="5">option 5</option>
+    </select>
+    
+    <p>checkbox</p>
+    <div>
+      <input type="checkbox">
+      <input type="checkbox" checked>
+    </div>
+
+    <p>radio</p>
+    <div>
+      <input type="radio">
+      <input type="radio" checked>
+    </div>
+
+    <p>buttons</p>
+    <button>submit</button>
+    <button>submit</button>
+  </form>
 </body>
 </html>
