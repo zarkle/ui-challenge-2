@@ -11,21 +11,20 @@
 
   <form>
     <p>text input</p>
-    <input type="text">placeholder text
+    <input type="text" value="placeholder text" >
     
     <p>text input w/ validation error</p>
-    <input type="text" required>placeholder text
+    <input id="validation" type="text" value="placeholder text" required>
     
     <p>select box</p>
-    <select name="select-closed" id="">select box
-      <option  selected>please select an option...</option>
+    <select name="select-closed" id="">
+      <option selected>please select an option...</option>
       <option value="1">option 1</option>
       <option value="2">option 2</option>
     </select>
 
     <p>select box - open</p>
     <select name="select-open" id="" size="6">
-      select box
       <option selected></option>
       <option value="1">option 1</option>
       <option value="2">option 2</option>
