@@ -13,6 +13,34 @@ p {
   margin-bottom: 5px;
 }
 
-#validation :focus {
-  border: 1px red solid;
+#check, #radio {
+  display: none;
+}
+
+.labels div {
+  background: url(form-elements-sprite.png);
+  border: ;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="text"]:required:invalid {
+  border: 1px solid red;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+  background-color: red;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+  background-color: red;
+}
+
+#radiobutton:checked + label {
+  background-color: green;
+}
+
+#radiobutton:checked + label div {
+  left: 50%;
 }
