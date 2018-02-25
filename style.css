@@ -13,34 +13,50 @@ p {
   margin-bottom: 5px;
 }
 
-#check, #radio {
-  display: none;
-}
-
-.labels div {
-  background: url(form-elements-sprite.png);
-  border: ;
-  display: block;
-  height: 20px;
-  width: 20px;
-}
-
 input[type="text"]:required:invalid {
   border: 1px solid red;
 }
 
-input[type="checkbox"]:not(:checked) + label {
-  background-color: red;
+#check, #radiobutton {
+  display: none;
 }
 
-input[type="checkbox"]:not(:checked) + label {
-  background-color: red;
+form .labels {
+  width: 165px;
+  height: 165px;
+  display: block;
+  transition: 0ms;
+  position: relative;
+}
+
+input[type=checkbox]:not(:checked) + label {
+  background-image: url('form-elements-sprite.png');
+  background-position: -157px -239px;
+}
+
+#check:checked + label {
+  background-image: url("form-elements-sprite.png");
+  background-position: -377px -239px;
+}
+
+input[type=radio]:not(:checked) + label {
+  background-image: url("form-elements-sprite.png");
+  background-position: -583px -242px;
 }
 
 #radiobutton:checked + label {
-  background-color: green;
+  background-image: url('form-elements-sprite.png');
+  background-position: -813px -242px;;
 }
 
-#radiobutton:checked + label div {
-  left: 50%;
+button {
+  background-color: lightgrey;
+  height: 45px;
+  width: 100px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+button:hover {
+  color: white;
+  background-color: #333;
 }
