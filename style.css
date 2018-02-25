@@ -1,3 +1,63 @@
 body {
-  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  margin: 5px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+input[type="text"]:required:invalid {
+  border: 1px solid red;
+}
+
+#check, #radiobutton {
+  display: none;
+}
+
+form .labels {
+  width: 165px;
+  height: 165px;
+  display: block;
+  transition: 0ms;
+  position: relative;
+}
+
+input[type=checkbox]:not(:checked) + label {
+  background-image: url('form-elements-sprite.png');
+  background-position: -157px -239px;
+}
+
+#check:checked + label {
+  background-image: url("form-elements-sprite.png");
+  background-position: -377px -239px;
+}
+
+input[type=radio]:not(:checked) + label {
+  background-image: url("form-elements-sprite.png");
+  background-position: -583px -242px;
+}
+
+#radiobutton:checked + label {
+  background-image: url('form-elements-sprite.png');
+  background-position: -813px -242px;;
+}
+
+button {
+  background-color: lightgrey;
+  height: 45px;
+  width: 100px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  color: white;
+  background-color: #333;
 }
